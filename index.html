@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>TriMusic</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    
+    <header class="header">
+      
+      <h1 class="header__title">
+        TRIMUSIC
+      </h1>
+      <h2 class="header__subtitle inactive">
+        Ronda 1/3
+      </h2>
+      <h2 class="header__subtitle1 inactive">
+        Ronda 2/3
+      </h2>
+      <h2 class="header__subtitle2 inactive">
+        Ronda 3/3
+      </h2>
+      
+    </header>
+    
+    <main>
+      
+      <section class="section welcome">        
+        <label class="section_welcome" for="name">Ingresa tu nombre: </label>
+        <input class="cuadro" type="text" id="name" name="name">
+        <button class="btn play">Jugar</button>
+      </section>
+      
+      <section class="section musicypeli inactive">
+         <button class="btn music">Música </button>
+         <button class="btn peli">Películas </button>
+         <button class="btn" id="btn18">Regresar</button>
+      </section>
+      
+      <section class="section first-question inactive">
+        
+        <h2 class="section__question">
+          ¿Cuál es el álbum más vendido de la historia?
+        </h2>
+        
+        <div class="container">
+          
+          <div class="container-option">
+            <input type="radio" id="opcion1" name="pregunta1" value="opcion1" onclick="alerta()" />
+            <label for="opcion1">Thriller</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion2" name="pregunta1" value="opcion2" onclick="alerta()" />
+            <label for="opcion2">Back in Black</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion3" name="pregunta1" value="opcion3" onclick="alerta()" />
+            <label for="opcion3">The Beatles</label>
+          </div>
+          
+        </div>
+          <button class="btn success btn--next">Siguiente</button>
+          <button class="btn" id="btn19"> Regresar</button>
+        
+      </section>
+      
+      <section class="section second-question inactive">
+        
+        <h2 class="section__question">
+          Adivina la canción
+          Te di lo que pedía' y no fue suficiente,
+          Tú solo mentía' y yo tu fiel creyente, 
+          Mil sueño' me vendía', yo fui tu cliente
+        </h2>
+        <div class="container">
+          <div class="container-option">
+            <input type="radio" id="opcion4" name="pregunta2" value="opcion4" onclick="alerta1()"/>
+            <label for="opcion4">Siempre era yo el culpable y tú jugando a la inocente</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion5" name="pregunta2" value="opcion5" onclick="alerta1()" />
+            <label for="opcion5">Yo dejo que jueguen con mi corazón</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion6" name="pregunta2" value="opcion6" onclick="alerta1()" />
+            <label for="opcion6">Pero ya estoy puesta pa lo mío</label>
+          </div>
+          
+        </div>
+         <button class="btn success btn--next">Siguiente</button>
+         <button class="btn regresar">Regresar</button>
+        
+      </section>
+      
+      <section class="section third-question inactive">
+        
+        <h2 class="section__question">
+          Adivina la cancion:
+          Pero me levanté y no le pienso bajar y conté un, dos, tres, para volver a empezar, yo no me rendiré, no, no ...
+        </h2>
+        <div class="container">
+          <div class="container-option">
+            <input type="radio" id="opcion7" name="pregunta3" value="opcion7" />
+            <label for="opcion7">No me rendiré</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion8" name="pregunta3" value="opcion8" />
+            <label for="opcion8">Mejor Que Ayer</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion9" name="pregunta3" value="opcion9" />
+            <label for="opcion9">Ella me levantó</label>
+          </div>
+          
+        </div>
+         <button class="btn result">Ver Resultados</button>
+        <button class="btn" id="btn20">Regresar</button>
+         <button class="btn regresar__inicio">Regresar al Inicio</button>
+      </section>
+      
+       <section class="section four-question inactive">
+        
+        <h2 class="section__question">
+          ¿Cuál es la película navideña número 1 de todos los tiempos?
+        </h2>
+        
+        <div class="container">
+          
+          <div class="container-option">
+            <input type="radio" id="opcion10" name="pregunta4" value="opcion10" onclick="alerta()" />
+            <label for="opcion10">Es una vida maravillosa</label> <!--  Respuesta correcta-->
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion11" name="pregunta4" value="opcion11" onclick="alerta()" />
+            <label for="opcion11">Desde el infierno</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion12" name="pregunta4" value="opcion12" onclick="alerta()" />
+            <label for="opcion12">Mad Love</label>
+          </div>
+          
+        </div>
+          <button class="btn success btn--next" id="btn21">Siguiente</button>
+          <button class="btn regresar" id="btn21_1">Regresar</button>
+        
+      </section>
+      
+      <section class="section five-question inactive">
+        
+        <h2 class="section__question">
+          ¿Qué película de terror fue el debut de Johnny Depp?
+        </h2>
+        
+        <div class="container">
+          
+          <div class="container-option">
+            <input type="radio" id="opcion13" name="pregunta5" value="opcion13" onclick="alerta()" />
+            <label for="opcion13">Sombras en la oscuridad</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion14" name="pregunta5" value="opcion14" onclick="alerta()" />
+            <label for="opcion14">El resplandor</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion15" name="pregunta5" value="opcion15" onclick="alerta()" />
+            <label for="opcion15">A Nightmare on Elm Street</label> <!--  Respuesta correcta-->
+          </div>
+          
+        </div>
+          <button class="btn success btn--next" id="btn22">Siguiente</button>
+          <button class="btn regresar" id="btn22_1" >Regresar</button>
+  
+      </section>
+      
+      <section class="section six-question inactive">
+        
+        <h2 class="section__question">
+          ¿Cuál fue la primera película animada de largometraje que se lanzó?
+        </h2>
+        
+        <div class="container">
+          
+          <div class="container-option">
+            <input type="radio" id="opcion16" name="pregunta6" value="opcion16"  />
+            <label for="opcion16"> Blanca Nieves y los Siete Enanos</label> <!--  Respuesta correcta-->
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion17" name="pregunta6" value="opcion17"  />
+            <label for="opcion17">Bambi</label>
+          </div>
+
+          <div class="container-option">
+            <input type="radio" id="opcion18" name="pregunta6" value="opcion18"  />
+            <label for="opcion18">La cenicienta</label> 
+          </div>
+          
+        </div>
+          <button class="btn result" id="btn23" > Ver Resultados</button>
+          <button class="btn" id="btn23_2"> Regresar</button>
+          <button class="btn regresar__inicio" id="btn23_1">Regresar al Inicio</button>
+  
+      </section>
+    </main>
+  </body>
+</html>
